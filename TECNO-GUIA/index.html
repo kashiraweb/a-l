@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TECNO GUÍA | Aprende mantenimiento informático</title>
+<meta name="description" content="Plataforma educativa sobre mantenimiento preventivo y correctivo de computadoras.">
+<link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-pc" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+<symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+<symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.6-.6-2.6z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3M3 13h18M10 13v2h4v-2"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M8 7h7"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/></symbol>
+<symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></symbol>
+<symbol id="i-temp" viewBox="0 0 24 24"><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/><path d="M12 9v7"/></symbol>
+<symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 16a5 5 0 0 1 6.8 0"/><circle cx="12" cy="19.2" r="1"/></symbol>
+<symbol id="i-driver" viewBox="0 0 24 24"><path d="M3 21l5-5M8 16l-1-1 8-8 2 2-8 8zM15 7l2-3 3 3-3 2"/></symbol>
+<symbol id="i-brush" viewBox="0 0 24 24"><path d="M14 4l6 6-6 6-6-6zM8 10l-4 8 2 2 8-4"/></symbol>
+<symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
+<symbol id="i-band" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 5V2M12 22v-3"/></symbol>
+<symbol id="i-meter" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><rect x="8" y="5.5" width="8" height="4"/><circle cx="12" cy="15" r="2.5"/><path d="M12 12.5V15"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 10l-2.5 2.5L8 15M16 10l2.5 2.5L16 15M13 9l-2 7"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+</defs></svg>
+
+<header class="navbar" id="top">
+ <div class="container navbar__inner">
+  <a class="brand" href="#top" aria-label="TECNO GUÍA"><img src="assets/icons/logo.svg" alt="" width="40" height="40"><span class="brand__name">TECNO <b>GUÍA</b></span></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+   <a class="nav__link is-active" href="#top" aria-current="page">Inicio</a>
+   <a class="nav__link" href="pages/aprende.html">Aprende</a>
+   <a class="nav__link" href="pages/mantenimiento.html">Mantenimiento</a>
+   <a class="nav__link" href="pages/problemas.html">Problemas y soluciones</a>
+   <a class="nav__link" href="pages/herramientas.html">Herramientas</a>
+   <a class="nav__link" href="pages/evaluacion.html">Evaluación</a>
+   <a class="nav__link" href="pages/acerca-de.html">Acerca de</a>
+   <a class="btn btn--primary btn--sm nav__cta" href="#contenidos"><svg class="ico"><use href="#i-book"/></svg>Empezar a aprender</a>
+  </nav>
+  <button class="search-toggle" id="search-toggle" type="button" aria-label="Buscar en TECNO GUÍA" aria-expanded="false" aria-controls="search"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></button>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+<div class="search" id="search" role="search" hidden>
+ <div class="container search__box">
+  <div class="search__field"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><label class="sr-only" for="search-input">Buscar en TECNO GUÍA</label><input id="search-input" type="search" autocomplete="off" placeholder="Busca: RAM, limpieza, procesador…" aria-describedby="search-status"><button class="search__clear" id="search-clear" type="button" aria-label="Limpiar búsqueda" hidden>×</button></div>
+  <p class="search__status" id="search-status" role="status" aria-live="polite">Escribe una palabra para buscar.</p>
+  <ul class="search__results" id="search-results"></ul>
+ </div>
+</div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero__bg" aria-hidden="true"></div>
+ <div class="container hero__grid">
+  <div class="hero__text">
+   <span class="tag">TU GUÍA EN MANTENIMIENTO INFORMÁTICO</span>
+   <h1>Aprende a <span class="grad">cuidar</span> y <span class="grad">mantener</span> tu computadora</h1>
+   <p class="lead">Descubre cómo funciona tu computadora, aprende a prevenir problemas y conoce las herramientas necesarias para mantener tu equipo en óptimas condiciones.</p>
+   <div class="btn-row">
+    <a class="btn btn--primary btn--lg" href="#contenidos"><svg class="ico"><use href="#i-book"/></svg>Comenzar a aprender</a>
+    <a class="btn btn--ghost btn--lg" href="#contenidos"><svg class="ico"><use href="#i-search"/></svg>Explorar contenidos</a>
+   </div>
+   <ul class="hero__points">
+    <li><svg class="ico"><use href="#i-check"/></svg>Aprendizaje práctico</li>
+    <li><svg class="ico"><use href="#i-check"/></svg>Información organizada</li>
+    <li><svg class="ico"><use href="#i-check"/></svg>Conocimientos tecnológicos</li>
+   </ul>
+  </div>
+  <div class="hero__art">
+   <svg viewBox="0 0 520 440" role="img" aria-label="Ilustración de una computadora portátil con procesador y engranajes">
+    <defs>
+     <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#247BFF"/><stop offset="1" stop-color="#1565D8"/></linearGradient>
+     <linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#071426"/></linearGradient>
+     <linearGradient id="gc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38BDF8"/><stop offset="1" stop-color="#247BFF"/></linearGradient>
+    </defs>
+    <circle cx="260" cy="220" r="200" fill="#EAF4FF"/>
+    <g fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity=".7">
+     <path d="M60 110h70l30 30h40"/><path d="M460 90h-60l-30 30h-30"/><path d="M50 330h90l30-30"/><path d="M470 340h-80l-30-30"/>
+    </g>
+    <g fill="#38BDF8"><circle cx="60" cy="110" r="5"/><circle cx="460" cy="90" r="5"/><circle cx="50" cy="330" r="5"/><circle cx="470" cy="340" r="5"/></g>
+    <!-- laptop -->
+    <rect x="120" y="90" width="280" height="190" rx="16" fill="url(#gd)"/>
+    <rect x="132" y="102" width="256" height="166" rx="8" fill="#0B1F3A" stroke="#247BFF" stroke-opacity=".5"/>
+    <g fill="url(#gc)"><rect x="148" y="120" width="90" height="8" rx="4"/><rect x="148" y="140" width="140" height="8" rx="4" opacity=".6"/><rect x="148" y="160" width="60" height="8" rx="4" opacity=".4"/></g>
+    <rect x="148" y="190" width="224" height="60" rx="8" fill="#1565D8" fill-opacity=".25"/>
+    <path d="M148 235l30-24 26 14 34-30 28 18 40-22 36 20" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 280h340l-20 30a12 12 0 0 1-10 6H120a12 12 0 0 1-10-6z" fill="url(#gb)"/>
+    <rect x="215" y="284" width="90" height="6" rx="3" fill="#fff" opacity=".35"/>
+    <!-- chip -->
+    <g class="float">
+     <rect x="330" y="250" width="130" height="130" rx="18" fill="#fff" stroke="#1565D8" stroke-width="3"/>
+     <g stroke="#1565D8" stroke-width="4" stroke-linecap="round"><path d="M360 238v12M395 238v12M430 238v12M360 380v12M395 380v12M430 380v12M318 285h12M318 315h12M318 345h12M460 285h12M460 315h12M460 345h12"/></g>
+     <rect x="357" y="277" width="76" height="76" rx="10" fill="url(#gb)"/>
+     <text x="395" y="323" text-anchor="middle" font-family="Manrope,Arial" font-weight="800" font-size="20" fill="#fff">CPU</text>
+    </g>
+    <!-- gear -->
+    <g class="spin" style="transform-origin:110px 350px">
+     <circle cx="110" cy="350" r="44" fill="#EAF4FF" stroke="#247BFF" stroke-width="3"/>
+     <g stroke="#247BFF" stroke-width="11" stroke-linecap="round"><path d="M110 296v10M110 394v10M56 350h10M154 350h10M72 312l7 7M141 381l7 7M72 388l7-7M141 319l7-7"/></g>
+     <circle cx="110" cy="350" r="16" fill="#fff" stroke="#1565D8" stroke-width="3"/>
+    </g>
+    <!-- shield -->
+    <g transform="translate(400 40)"><path d="M30 0l30 11v22c0 18-12 30-30 35C12 63 0 51 0 33V11z" fill="url(#gb)"/><path d="M17 33l9 9 17-18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="section section--welcome" id="bienvenida">
+ <div class="container split">
+  <div>
+   <h2 class="section__title">Bienvenido a TECNO GUÍA</h2>
+   <p class="section__text">Una plataforma educativa diseñada para ayudarte a comprender el funcionamiento de las computadoras y adquirir conocimientos fundamentales sobre su mantenimiento.</p>
+   <div class="mini-grid">
+    <article class="mini" data-target="#contenidos"><span class="icon-box"><svg class="ico"><use href="#i-bulb"/></svg></span><h3>Aprende</h3><p>Adquiere conocimientos informáticos.</p></article>
+    <article class="mini" data-target="#categoria-hardware-y-software"><span class="icon-box"><svg class="ico"><use href="#i-chip"/></svg></span><h3>Comprende</h3><p>Identifica los componentes de una computadora.</p></article>
+    <article class="mini" data-target="#mantenimiento"><span class="icon-box"><svg class="ico"><use href="#i-tools"/></svg></span><h3>Aplica</h3><p>Conoce los fundamentos del mantenimiento.</p></article>
+   </div>
+  </div>
+  <div class="panel" aria-hidden="true">
+   <div class="panel__grid">
+    <span class="panel__node"><svg class="ico"><use href="#i-pc"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-chip"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-gear"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-shield"/></svg></span>
+    <span class="panel__node panel__node--main"><svg class="ico"><use href="#i-layers"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-wifi"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-code"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-tools"/></svg></span>
+    <span class="panel__node"><svg class="ico"><use href="#i-bolt"/></svg></span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--soft" id="contenidos">
+ <div class="container">
+  <header class="section__head"><h2 class="section__title">Explora nuestros contenidos</h2><p class="section__text">Encuentra información organizada para aprender sobre computadoras y mantenimiento informático.</p></header>
+  <div class="grid grid--3">
+   <article data-href="pages/aprende.html#ap-fundamentos" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-pc"/></svg></span><h3>Fundamentos de computación</h3><p>Conoce los conceptos fundamentales de la informática y el funcionamiento básico de una computadora.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/aprende.html#ap-hwsw" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-chip"/></svg></span><h3>Hardware y software</h3><p>Identifica los componentes físicos y los programas que permiten funcionar a un equipo informático.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/mantenimiento.html#mt-preventivo" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-shield"/></svg></span><h3>Mantenimiento preventivo</h3><p>Aprende sobre los cuidados necesarios para prevenir fallas y conservar tu computadora.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/mantenimiento.html#mt-correctivo" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-tools"/></svg></span><h3>Mantenimiento correctivo</h3><p>Comprende cómo identificar problemas y los procedimientos generales para corregirlos.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/problemas.html#catalogo" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-search"/></svg></span><h3>Problemas y soluciones</h3><p>Descubre las fallas informáticas más comunes y conoce sus posibles soluciones.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/herramientas.html#categorias" class="card"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-box"/></svg></span><h3>Herramientas informáticas</h3><p>Conoce los instrumentos físicos y programas utilizados en el mantenimiento de computadoras.</p><span class="more">Ver tema<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="mantenimiento">
+ <div class="container">
+  <header class="section__head"><h2 class="section__title">Cuida tu computadora de manera adecuada</h2><p class="section__text">Conoce las dos principales formas de mantenimiento informático.</p></header>
+  <div class="grid grid--2">
+   <article data-href="pages/mantenimiento.html#mt-preventivo" class="big big--prev">
+    <span class="icon-box icon-box--lg icon-box--glass"><svg class="ico"><use href="#i-shield"/></svg></span>
+    <h3>Mantenimiento preventivo</h3>
+    <p>Consiste en realizar revisiones y cuidados periódicos para prevenir fallas, conservar los componentes y mejorar el funcionamiento del equipo.</p>
+    <ul class="checks"><li><svg class="ico"><use href="#i-brush"/></svg>Limpieza periódica</li><li><svg class="ico"><use href="#i-search"/></svg>Revisión de componentes</li><li><svg class="ico"><use href="#i-layers"/></svg>Actualización del sistema</li><li><svg class="ico"><use href="#i-shield"/></svg>Prevención de fallas</li></ul>
+   </article>
+   <article data-href="pages/mantenimiento.html#mt-correctivo" class="big big--corr">
+    <span class="icon-box icon-box--lg icon-box--glass"><svg class="ico"><use href="#i-tools"/></svg></span>
+    <h3>Mantenimiento correctivo</h3>
+    <p>Se realiza cuando una computadora presenta problemas y necesita una intervención para recuperar su funcionamiento.</p>
+    <ul class="checks"><li><svg class="ico"><use href="#i-search"/></svg>Identificación de fallas</li><li><svg class="ico"><use href="#i-meter"/></svg>Diagnóstico</li><li><svg class="ico"><use href="#i-driver"/></svg>Reparación</li><li><svg class="ico"><use href="#i-check"/></svg>Comprobación del funcionamiento</li></ul>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="section section--soft" id="problemas">
+ <div class="container">
+  <header class="section__head"><h2 class="section__title">Problemas comunes de una computadora</h2><p class="section__text">Identifica algunas situaciones que pueden afectar el funcionamiento de tu equipo.</p></header>
+  <div class="grid grid--4">
+   <article data-href="pages/problemas.html#problema-sobrecalentamiento" class="card card--problem tone-1"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-gauge"/></svg></span><h3>Computadora lenta</h3><p>Tiempos de respuesta largos al abrir programas o archivos.</p><span class="more">Consultar<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/problemas.html#problema-no-enciende" class="card card--problem tone-2"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-power"/></svg></span><h3>Problemas de encendido</h3><p>El equipo no inicia o se apaga sin previo aviso.</p><span class="more">Consultar<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/problemas.html#problema-sobrecalentamiento" class="card card--problem tone-3"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-temp"/></svg></span><h3>Sobrecalentamiento</h3><p>Temperatura elevada, ventiladores ruidosos y bajo rendimiento.</p><span class="more">Consultar<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+   <article data-href="pages/problemas.html#problema-sin-internet" class="card card--problem tone-4"><span class="icon-box icon-box--lg"><svg class="ico"><use href="#i-wifi"/></svg></span><h3>Conexión a Internet</h3><p>Redes que se pierden, navegación lenta o sin acceso.</p><span class="more">Consultar<svg class="ico"><use href="#i-arrow"/></svg></span></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="herramientas">
+ <div class="container">
+  <header class="section__head"><h2 class="section__title">Herramientas para el mantenimiento informático</h2><p class="section__text">Conoce algunos instrumentos y recursos utilizados para realizar tareas de mantenimiento de computadoras.</p></header>
+  <div class="grid grid--3">
+   <article data-href="pages/herramientas.html#fisicas" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-driver"/></svg></span><div><h3>Destornilladores de precisión</h3><p>Abren equipos y sueltan tornillos pequeños sin dañarlos.</p></div></article>
+   <article data-href="pages/herramientas.html#fisicas" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-brush"/></svg></span><div><h3>Brochas antiestáticas</h3><p>Retiran el polvo de placas y ranuras sin generar estática.</p></div></article>
+   <article data-href="pages/herramientas.html#fisicas" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-wind"/></svg></span><div><h3>Aire comprimido</h3><p>Limpia ventiladores, disipadores y zonas de difícil acceso.</p></div></article>
+   <article data-href="pages/herramientas.html#fisicas" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-band"/></svg></span><div><h3>Pulsera antiestática</h3><p>Protege los componentes frente a descargas electrostáticas.</p></div></article>
+   <article data-href="pages/herramientas.html#fisicas" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-meter"/></svg></span><div><h3>Multímetro</h3><p>Mide voltaje, continuidad y resistencia en circuitos.</p></div></article>
+   <article data-href="pages/herramientas.html#digitales" class="tool"><span class="icon-box"><svg class="ico"><use href="#i-code"/></svg></span><div><h3>Software de diagnóstico</h3><p>Analiza temperatura, memoria, disco y rendimiento general.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta" id="invitacion">
+ <svg class="cta__circuit" viewBox="0 0 600 300" aria-hidden="true"><g fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"><path d="M0 60h140l40 40h120"/><path d="M600 40H480l-40 40h-80"/><path d="M0 240h200l40-40h80"/><path d="M600 250H420l-40-40"/></g><g fill="#38BDF8"><circle cx="300" cy="100" r="5"/><circle cx="360" cy="80" r="5"/><circle cx="320" cy="200" r="5"/><circle cx="380" cy="210" r="5"/></g></svg>
+ <div class="container cta__inner">
+  <h2>¡Comienza tu aprendizaje tecnológico!</h2>
+  <p>Explora nuestros contenidos y descubre cómo cuidar, comprender y mantener una computadora.</p>
+  <a class="btn btn--light btn--lg" href="#contenidos">Explorar TECNO GUÍA</a>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+ <div class="container footer__grid">
+  <div><a class="brand brand--light" href="#top"><img src="assets/icons/logo.svg" alt="" width="40" height="40"><span class="brand__name">TECNO <b>GUÍA</b></span></a><p>Una guía educativa para aprender sobre computadoras y mantenimiento informático.</p></div>
+  <div><h4>Navegación</h4><ul><li><a href="#top">Inicio</a></li><li><a href="pages/aprende.html">Aprende</a></li><li><a href="pages/mantenimiento.html">Mantenimiento</a></li><li><a href="pages/problemas.html">Problemas y soluciones</a></li></ul></div>
+  <div><h4>Recursos</h4><ul><li><a href="pages/herramientas.html">Herramientas</a></li><li><a href="pages/evaluacion.html">Evaluación</a></li><li><a href="pages/acerca-de.html">Acerca de</a></li></ul></div>
+  <div><h4>Proyecto</h4><p>TECNO GUÍA es un proyecto con fines educativos que busca acercar el mantenimiento informático a quienes quieren aprender.</p></div>
+ </div>
+ <div class="container footer__bottom">© 2026 TECNO GUÍA. Todos los derechos reservados.</div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="Volver arriba" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/scroll.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/buttons.js" defer></script>
+<script src="js/cards.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/visual-effects.js" defer></script>
+</body>
+</html>

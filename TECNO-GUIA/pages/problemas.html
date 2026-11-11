@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Problemas y soluciones · TECNO GUÍA</title>
+  <meta name="description" content="Identifica los problemas de tu computadora y aprende a solucionarlos con TECNO GUÍA.">
+  <!-- Ubicación prevista: pages/problemas.html · css/problemas.css -->
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/problemas.css">
+</head>
+<body class="pb-page" id="top">
+
+<!-- Sprite de iconos (solo visual) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v8"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M6.5 6.5h.01M9.5 6.5h.01"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10.5 10.5 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><path d="M12 19.5h.01"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 18a9 9 0 1 1 16 0"/><path d="M12 14l4-5M12 14h.01"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4M4 5v3.5h3.5"/><path d="M4 13a8 8 0 0 0 14.5 4M20 19v-3.5h-3.5"/></symbol>
+    <symbol id="i-drive" viewBox="0 0 24 24"><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M5 14l2.5-8.5A2 2 0 0 1 9.4 4h5.2a2 2 0 0 1 1.9 1.5L19 14M7 17h.01M11 17h4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 1 5.2-3.2l-2.5 2.5 1 2.5 2.5 1 2.5-2.5a4 4 0 0 1-5.2 5.2L8.5 21a2.1 2.1 0 0 1-3-3z" transform="translate(-2 0)"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7M12 17h.01"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M8 7h7"/></symbol>
+  </defs>
+</svg>
+
+<!-- ================= 1. ENCABEZADO Y NAVEGACIÓN ================= -->
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a class="brand" href="../index.html" aria-label="TECNO GUÍA, inicio">
+      <img src="../assets/icons/logo.svg" alt="" width="40" height="40">
+      <span class="brand__name">TECNO <b>GUÍA</b></span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a class="nav__link" href="../index.html">Inicio</a>
+      <a class="nav__link" href="aprende.html">Aprende</a>
+      <a class="nav__link" href="mantenimiento.html">Mantenimiento</a>
+      <a class="nav__link is-active" href="#top" aria-current="page">Problemas y soluciones</a>
+      <a class="nav__link" href="herramientas.html">Herramientas</a>
+      <a class="nav__link" href="evaluacion.html">Evaluación</a>
+      <a class="nav__link" href="acerca-de.html">Acerca de</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= 2. HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <span class="tag">PROBLEMAS Y SOLUCIONES</span>
+      <h1 id="hero-title">Identifica los <span class="grad">problemas de tu computadora</span> y aprende a solucionarlos</h1>
+      <p class="lead">Descubre las fallas informáticas más frecuentes, aprende a reconocer sus síntomas y conoce las posibles soluciones para mantener tu computadora en buen estado.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--lg" href="#catalogo">Explorar problemas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#diagnostico">Aprender a diagnosticar</a>
+      </div>
+      <ul class="hero__points">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Síntomas y causas</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Comprobaciones básicas</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones seguras</li>
+      </ul>
+    </div>
+    <div class="hero__art">
+      <svg viewBox="0 0 520 420" role="img" aria-label="Ilustración de una computadora de escritorio y un portátil con una señal de advertencia y herramientas de diagnóstico">
+        <defs>
+          <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#1565D8"/></linearGradient>
+        </defs>
+        <rect x="20" y="20" width="480" height="380" rx="32" fill="url(#pbg)"/>
+        <circle cx="440" cy="330" r="60" fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="22"/>
+        <circle cx="70" cy="70" r="40" fill="none" stroke="#38BDF8" stroke-opacity=".25" stroke-width="10"/>
+        <g class="float">
+          <rect x="90" y="70" width="260" height="170" rx="14" fill="#fff"/>
+          <rect x="104" y="84" width="232" height="128" rx="8" fill="#EAF4FF"/>
+          <path d="M220 98l40 70h-80z" fill="#F5C76B" stroke="#D98A12" stroke-width="5" stroke-linejoin="round"/>
+          <rect x="217" y="119" width="6" height="24" rx="3" fill="#7A4B0B"/>
+          <circle cx="220" cy="153" r="4" fill="#7A4B0B"/>
+          <rect x="116" y="190" width="80" height="8" rx="4" fill="#C9DDF7"/>
+          <rect x="246" y="190" width="76" height="8" rx="4" fill="#38BDF8"/>
+          <rect x="205" y="240" width="30" height="30" fill="#C9DDF7"/>
+          <rect x="170" y="268" width="100" height="12" rx="6" fill="#fff"/>
+        </g>
+        <g>
+          <rect x="300" y="232" width="150" height="96" rx="8" fill="#fff"/>
+          <rect x="310" y="242" width="130" height="76" rx="4" fill="#0B1F3A"/>
+          <rect x="322" y="256" width="60" height="6" rx="3" fill="#38BDF8"/>
+          <rect x="322" y="270" width="90" height="6" rx="3" fill="#247BFF"/>
+          <rect x="322" y="284" width="48" height="6" rx="3" fill="#BFE3FF"/>
+          <path d="M282 332h186l-12 18H294z" fill="#BFE3FF"/>
+        </g>
+        <g class="spin" style="transform-box:fill-box;transform-origin:center">
+          <circle cx="410" cy="112" r="34" fill="none" stroke="#38BDF8" stroke-width="14" stroke-dasharray="10 9"/>
+          <circle cx="410" cy="112" r="24" fill="#38BDF8"/>
+          <circle cx="410" cy="112" r="10" fill="#0B1F3A"/>
+        </g>
+        <g transform="translate(46 292)">
+          <rect width="76" height="76" rx="14" fill="rgba(255,255,255,.12)" stroke="#BFE3FF" stroke-opacity=".5"/>
+          <rect x="22" y="22" width="32" height="32" rx="5" fill="#fff"/>
+          <path d="M30 10v12M46 10v12M30 54v12M46 54v12M10 30h12M10 46h12M54 30h12M54 46h12" stroke="#BFE3FF" stroke-width="4" stroke-linecap="round"/>
+        </g>
+        <circle cx="190" cy="352" r="22" fill="none" stroke="#fff" stroke-width="7"/>
+        <path d="M206 368l20 20" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. INTRODUCCIÓN ================= -->
+<section class="section" id="introduccion" aria-labelledby="intro-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="intro-title">Comprende qué está ocurriendo con tu computadora</h2>
+    </div>
+    <div class="pb-intro-text">
+      <p>Una computadora puede presentar diferentes dificultades durante su funcionamiento. Algunas están relacionadas con el hardware, otras con el software, la conexión a Internet o la configuración del sistema operativo.</p>
+      <p>Aprender a reconocer los síntomas permite comprender qué puede estar ocurriendo y elegir una solución adecuada.</p>
+      <p>No todos los problemas requieren desmontar una computadora ni reemplazar componentes. Muchas dificultades pueden identificarse mediante observaciones, comprobaciones básicas y procedimientos seguros.</p>
+    </div>
+    <div class="grid grid--3 pb-info">
+      <article class="card tone-1">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg></span>
+        <h3>¿Qué es un problema informático?</h3>
+        <p>Es una falla, dificultad o comportamiento inesperado que afecta el funcionamiento normal de una computadora, un programa, un dispositivo o una conexión.</p>
+      </article>
+      <article class="card tone-2">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+        <h3>¿Por qué debemos identificarlo?</h3>
+        <p>Porque aplicar soluciones sin conocer el origen del problema puede empeorar la situación, provocar pérdida de información o generar gastos innecesarios.</p>
+      </article>
+      <article class="card tone-3">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <h3>¿Qué debemos hacer primero?</h3>
+        <p>Observar los síntomas, identificar cuándo comenzó el problema, revisar los mensajes de error y realizar comprobaciones básicas antes de intentar solucionarlo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. CATEGORÍAS ================= -->
+<section class="section section--soft" id="categorias" aria-labelledby="cat-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="cat-title">Explora los diferentes tipos de problemas</h2>
+      <p class="section__text">Las fallas informáticas pueden tener diferentes orígenes. Conocer sus categorías facilita la identificación de posibles causas.</p>
+    </div>
+    <div class="grid grid--4">
+      <article class="card pb-cat tone-3" data-categoria="hardware">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-chip"/></svg></span>
+        <h3>Problemas de hardware</h3>
+        <p>Son dificultades relacionadas con los componentes físicos de una computadora, como la memoria RAM, el almacenamiento, los ventiladores, la pantalla o los dispositivos de conexión.</p>
+        <span class="more">Ver problemas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </article>
+      <article class="card pb-cat tone-2" data-categoria="software">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-window"/></svg></span>
+        <h3>Problemas de software</h3>
+        <p>Son fallas relacionadas con los programas, el sistema operativo, los controladores o las configuraciones del equipo.</p>
+        <span class="more">Ver problemas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </article>
+      <article class="card pb-cat tone-1" data-categoria="conectividad">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-wifi"/></svg></span>
+        <h3>Problemas de conectividad</h3>
+        <p>Son dificultades que impiden o interrumpen la conexión con Internet, redes locales u otros dispositivos.</p>
+        <span class="more">Ver problemas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </article>
+      <article class="card pb-cat tone-4" data-categoria="rendimiento">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-gauge"/></svg></span>
+        <h3>Problemas de rendimiento</h3>
+        <p>Se presentan cuando la computadora trabaja más lentamente de lo esperado, tarda en responder o tiene dificultades para ejecutar determinadas tareas.</p>
+        <span class="more">Ver problemas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. CATÁLOGO ================= -->
+<section class="section" id="catalogo" aria-labelledby="catalogo-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="catalogo-title">Problemas frecuentes y sus posibles soluciones</h2>
+      <p class="section__text">Consulta las fallas más comunes que puede presentar una computadora. Aprende a reconocer sus síntomas, comprender sus posibles causas y conocer las medidas básicas que puedes tomar.</p>
+    </div>
+    <div class="grid grid--2">
+
+      <article class="card pb-card--row tone-3" data-problema="no-enciende">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-power"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>La computadora no enciende</h3>
+          <p>El equipo no inicia cuando se presiona el botón de encendido. Puede no mostrar luces, sonidos ni imágenes en la pantalla.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-4" data-problema="lenta">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-gauge"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Rendimiento</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>La computadora funciona lentamente</h3>
+          <p>El sistema tarda demasiado en iniciar, abrir programas o realizar tareas habituales.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-3" data-problema="sobrecalentamiento">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-thermo"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Hardware</span><span class="pb-level pb-level--medio">Dificultad media</span></div>
+          <h3>La computadora se sobrecalienta</h3>
+          <p>El equipo alcanza temperaturas elevadas durante su funcionamiento. Esto puede ocasionar disminución del rendimiento o apagados inesperados.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-3" data-problema="sin-imagen">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>La pantalla no muestra imagen</h3>
+          <p>La computadora parece encender, pero el monitor o la pantalla permanece sin mostrar información.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-3" data-problema="teclado-raton">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-keyboard"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>El teclado o el ratón no funcionan</h3>
+          <p>Uno de los dispositivos de entrada deja de responder o presenta dificultades durante su utilización.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-1" data-problema="sin-internet">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-wifi"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Conectividad</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>No hay conexión a Internet</h3>
+          <p>La computadora no puede conectarse a Internet o pierde la conexión repetidamente.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-2" data-problema="programas-no-abren">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-window"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Software</span><span class="pb-level pb-level--medio">Dificultad media</span></div>
+          <h3>Los programas no abren</h3>
+          <p>Una aplicación no inicia, se cierra inesperadamente o muestra errores durante su ejecución.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-2" data-problema="sin-sonido">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-volume"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Software</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>El sonido no funciona</h3>
+          <p>La computadora no reproduce audio o no reconoce correctamente los dispositivos de sonido.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-2" data-problema="so-no-inicia">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-refresh"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Software</span><span class="pb-level pb-level--alto">Dificultad alta</span></div>
+          <h3>El sistema operativo no inicia correctamente</h3>
+          <p>La computadora se enciende, pero el sistema operativo no consigue iniciar de manera normal.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+      <article class="card pb-card--row tone-4" data-problema="almacenamiento-lleno">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-drive"/></svg></span>
+        <div>
+          <div class="pb-meta"><span class="pb-chip">Rendimiento</span><span class="pb-level">Dificultad básica</span></div>
+          <h3>El almacenamiento está lleno</h3>
+          <p>La unidad de almacenamiento tiene poco espacio disponible y el sistema puede presentar dificultades para guardar archivos o instalar programas.</p>
+          <span class="more">Más información <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. HARDWARE ================= -->
+<section class="section section--soft" id="hardware" aria-labelledby="hw-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="hw-title">Problemas de hardware</h2>
+      <p class="section__text">Son dificultades relacionadas con los componentes físicos de una computadora, como la memoria RAM, el almacenamiento, los ventiladores, la pantalla o los dispositivos de conexión.</p>
+    </div>
+
+    <!-- Problema 1 -->
+    <article class="pb-ficha" id="problema-no-enciende">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-power"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 1</span>
+          <h3>La computadora no enciende</h3>
+          <p>El equipo no inicia cuando se presiona el botón de encendido. Puede no mostrar luces, sonidos ni imágenes en la pantalla.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>No aparecen luces indicadoras.</li>
+            <li>No se escucha el funcionamiento de los ventiladores.</li>
+            <li>La pantalla permanece apagada.</li>
+            <li>El equipo no responde al botón de encendido.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Cable de alimentación desconectado.</li>
+            <li>Toma de corriente sin suministro eléctrico.</li>
+            <li>Regleta apagada.</li>
+            <li>Cargador desconectado o defectuoso.</li>
+            <li>Problema interno de alimentación.</li>
+            <li>Fallo de algún componente.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones básicas</h4>
+          <ul>
+            <li>Verificar que el cable esté correctamente conectado.</li>
+            <li>Comprobar que la toma de corriente funcione.</li>
+            <li>Revisar el interruptor de la regleta.</li>
+            <li>Comprobar la conexión del cargador en portátiles.</li>
+            <li>Observar si existen luces indicadoras.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones recomendadas</h4>
+          <ul>
+            <li>Conectar correctamente el cable de alimentación.</li>
+            <li>Probar otra toma de corriente que funcione.</li>
+            <li>Comprobar las conexiones externas.</li>
+            <li>Solicitar una revisión técnica si continúa sin encender.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Evitar desconectar los cables bruscamente.</li>
+            <li>Mantener los cables en buen estado.</li>
+            <li>Evitar golpes y humedad.</li>
+          </ul>
+        </section>
+      </div>
+      <div class="pb-alert" role="note">
+        <svg class="ico" aria-hidden="true"><use href="#i-alert"/></svg>
+        <div><strong>Advertencia</strong><p>No abras la fuente de alimentación ni manipules circuitos eléctricos internos. Estas revisiones deben quedar en manos de personal capacitado.</p></div>
+      </div>
+    </article>
+
+    <!-- Problema 3 -->
+    <article class="pb-ficha" id="problema-sobrecalentamiento">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-thermo"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 3</span>
+          <h3>La computadora se sobrecalienta</h3>
+          <p>El equipo alcanza temperaturas elevadas durante su funcionamiento. Esto puede ocasionar disminución del rendimiento o apagados inesperados.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Hardware</span><span class="pb-level pb-level--medio">Dificultad media</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Ventiladores con mucho ruido.</li>
+            <li>Carcasa demasiado caliente.</li>
+            <li>Rendimiento reducido.</li>
+            <li>Apagados inesperados.</li>
+            <li>Temperaturas elevadas durante tareas normales.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Acumulación de polvo.</li>
+            <li>Ventilación obstruida.</li>
+            <li>Ventiladores defectuosos.</li>
+            <li>Mala circulación del aire.</li>
+            <li>Problemas en el sistema de refrigeración.</li>
+            <li>Uso prolongado con cargas elevadas.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Observar las salidas de ventilación.</li>
+            <li>Comprobar si el equipo tiene espacio suficiente.</li>
+            <li>Escuchar si los ventiladores producen sonidos anormales.</li>
+            <li>Observar cuándo aparece el problema.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Colocar el equipo en una superficie firme y ventilada.</li>
+            <li>No cubrir las entradas de aire.</li>
+            <li>Apagar el equipo si presenta temperaturas anormales.</li>
+            <li>Solicitar mantenimiento interno si existe acumulación de polvo.</li>
+            <li>Consultar a un técnico cuando los ventiladores no funcionen correctamente.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Mantener limpias las zonas de ventilación.</li>
+            <li>Evitar utilizar portátiles sobre superficies que bloqueen el aire.</li>
+            <li>Realizar mantenimiento preventivo.</li>
+            <li>Mantener una circulación de aire adecuada.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- Problema 4 -->
+    <article class="pb-ficha" id="problema-sin-imagen">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 4</span>
+          <h3>La pantalla no muestra imagen</h3>
+          <p>La computadora parece encender, pero el monitor o la pantalla permanece sin mostrar información.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Pantalla completamente negra.</li>
+            <li>Mensaje de ausencia de señal.</li>
+            <li>La computadora parece funcionar, pero no hay imagen.</li>
+            <li>La pantalla se apaga inesperadamente.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Cable de vídeo desconectado.</li>
+            <li>Monitor apagado.</li>
+            <li>Entrada de vídeo incorrecta.</li>
+            <li>Brillo demasiado bajo en una portátil.</li>
+            <li>Problema de pantalla.</li>
+            <li>Fallo de hardware.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Revisar que el monitor esté encendido.</li>
+            <li>Comprobar las conexiones externas.</li>
+            <li>Verificar la entrada seleccionada del monitor.</li>
+            <li>Comprobar si la computadora presenta indicadores de encendido.</li>
+            <li>Probar otro cable compatible si está disponible.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Conectar correctamente el cable de vídeo.</li>
+            <li>Seleccionar la entrada correcta del monitor.</li>
+            <li>Comprobar el brillo.</li>
+            <li>Solicitar revisión técnica si persiste la ausencia de imagen.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Evitar doblar los cables.</li>
+            <li>Mantener limpias las conexiones.</li>
+            <li>Transportar cuidadosamente los equipos.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- Problema 5 -->
+    <article class="pb-ficha" id="problema-teclado-raton">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-keyboard"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 5</span>
+          <h3>El teclado o el ratón no funcionan</h3>
+          <p>Uno de los dispositivos de entrada deja de responder o presenta dificultades durante su utilización.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Hardware</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Las teclas no responden.</li>
+            <li>El cursor no se mueve.</li>
+            <li>El dispositivo se desconecta.</li>
+            <li>Algunas teclas funcionan incorrectamente.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Conexión USB incorrecta.</li>
+            <li>Batería agotada en dispositivos inalámbricos.</li>
+            <li>Problemas de controladores.</li>
+            <li>Puerto USB defectuoso.</li>
+            <li>Daños físicos.</li>
+            <li>Suciedad acumulada.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Verificar la conexión.</li>
+            <li>Probar otro puerto USB.</li>
+            <li>Comprobar las baterías.</li>
+            <li>Revisar la configuración del sistema.</li>
+            <li>Comprobar si el dispositivo funciona en otro equipo.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Reconectar el dispositivo.</li>
+            <li>Cambiar las baterías si corresponde.</li>
+            <li>Actualizar los controladores mediante fuentes confiables.</li>
+            <li>Solicitar revisión si existe daño físico.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Evitar golpes.</li>
+            <li>Mantener limpios los dispositivos.</li>
+            <li>No tirar de los cables.</li>
+            <li>Guardar correctamente los periféricos.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 7. SOFTWARE ================= -->
+<section class="section" id="software" aria-labelledby="sw-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="sw-title">Problemas de software</h2>
+      <p class="section__text">Son fallas relacionadas con los programas, el sistema operativo, los controladores o las configuraciones del equipo.</p>
+    </div>
+
+    <!-- Problema 7 -->
+    <article class="pb-ficha" id="problema-programas-no-abren">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-window"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 7</span>
+          <h3>Los programas no abren</h3>
+          <p>Una aplicación no inicia, se cierra inesperadamente o muestra errores durante su ejecución.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Software</span><span class="pb-level pb-level--medio">Dificultad media</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>El programa no responde.</li>
+            <li>Aparece un mensaje de error.</li>
+            <li>La aplicación se cierra.</li>
+            <li>El programa tarda demasiado en iniciar.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Archivos dañados.</li>
+            <li>Instalación incompleta.</li>
+            <li>Incompatibilidad.</li>
+            <li>Falta de recursos.</li>
+            <li>Dependencias ausentes.</li>
+            <li>Actualizaciones pendientes.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Leer el mensaje de error.</li>
+            <li>Comprobar los requisitos del programa.</li>
+            <li>Revisar si existe una actualización.</li>
+            <li>Comprobar el espacio disponible.</li>
+            <li>Verificar si otros programas funcionan correctamente.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Reiniciar la aplicación.</li>
+            <li>Actualizar el programa.</li>
+            <li>Utilizar la opción de reparación si está disponible.</li>
+            <li>Reinstalar desde su fuente oficial cuando corresponda.</li>
+            <li>Consultar soporte técnico si el problema continúa.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Descargar programas desde fuentes oficiales.</li>
+            <li>Mantener las aplicaciones actualizadas.</li>
+            <li>Evitar modificaciones desconocidas.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- Problema 8 -->
+    <article class="pb-ficha" id="problema-sin-sonido">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-volume"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 8</span>
+          <h3>El sonido no funciona</h3>
+          <p>La computadora no reproduce audio o no reconoce correctamente los dispositivos de sonido.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Software</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>No se escucha ningún sonido.</li>
+            <li>Los auriculares no funcionan.</li>
+            <li>El volumen aparece silenciado.</li>
+            <li>El dispositivo de salida es incorrecto.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Volumen desactivado.</li>
+            <li>Dispositivo de salida incorrecto.</li>
+            <li>Controladores de audio defectuosos.</li>
+            <li>Auriculares desconectados.</li>
+            <li>Problemas del dispositivo de sonido.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Revisar el volumen.</li>
+            <li>Comprobar el dispositivo de salida.</li>
+            <li>Verificar las conexiones.</li>
+            <li>Probar otro dispositivo de audio.</li>
+            <li>Revisar la configuración de sonido.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Activar el volumen.</li>
+            <li>Seleccionar la salida correcta.</li>
+            <li>Reconectar los auriculares.</li>
+            <li>Actualizar controladores desde fuentes oficiales.</li>
+            <li>Solicitar revisión si existe un problema físico.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Evitar golpes.</li>
+            <li>Mantener limpias las conexiones.</li>
+            <li>Utilizar dispositivos compatibles.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- Problema 9 -->
+    <article class="pb-ficha" id="problema-so-no-inicia">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-refresh"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 9</span>
+          <h3>El sistema operativo no inicia correctamente</h3>
+          <p>La computadora se enciende, pero el sistema operativo no consigue iniciar de manera normal.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Software</span><span class="pb-level pb-level--alto">Dificultad alta</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>El inicio queda detenido.</li>
+            <li>Aparecen mensajes de error.</li>
+            <li>El equipo reinicia repetidamente.</li>
+            <li>Se muestra una pantalla de recuperación.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Archivos del sistema dañados.</li>
+            <li>Actualización interrumpida.</li>
+            <li>Problemas de almacenamiento.</li>
+            <li>Controladores incompatibles.</li>
+            <li>Configuración incorrecta.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Leer los mensajes que aparecen.</li>
+            <li>Identificar cuándo comenzó el problema.</li>
+            <li>Observar si ocurrió después de una actualización.</li>
+            <li>Comprobar si existen dispositivos externos conectados.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Desconectar dispositivos externos no esenciales.</li>
+            <li>Utilizar las herramientas oficiales de recuperación.</li>
+            <li>Consultar asistencia técnica.</li>
+            <li>Proteger los datos antes de realizar procedimientos que puedan modificarlos.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>No interrumpir actualizaciones.</li>
+            <li>Mantener copias de seguridad.</li>
+            <li>Utilizar software confiable.</li>
+            <li>Mantener el sistema actualizado.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 8. CONECTIVIDAD ================= -->
+<section class="section section--soft" id="conectividad" aria-labelledby="net-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="net-title">Problemas de Internet y conectividad</h2>
+      <p class="section__text">Son dificultades que impiden o interrumpen la conexión con Internet, redes locales u otros dispositivos.</p>
+    </div>
+
+    <!-- Problema 6 -->
+    <article class="pb-ficha" id="problema-sin-internet">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-wifi"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 6</span>
+          <h3>No hay conexión a Internet</h3>
+          <p>La computadora no puede conectarse a Internet o pierde la conexión repetidamente.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Conectividad</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Las páginas no cargan.</li>
+            <li>Aparece el mensaje de conexión limitada.</li>
+            <li>La red Wi-Fi no aparece.</li>
+            <li>La conexión se interrumpe.</li>
+            <li>Las aplicaciones no pueden acceder a Internet.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Router apagado.</li>
+            <li>Problemas del proveedor.</li>
+            <li>Wi-Fi desactivado.</li>
+            <li>Contraseña incorrecta.</li>
+            <li>Problemas de configuración de red.</li>
+            <li>Señal inalámbrica débil.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Revisar si otros dispositivos tienen Internet.</li>
+            <li>Comprobar que el Wi-Fi esté activado.</li>
+            <li>Observar las luces del router.</li>
+            <li>Verificar la conexión de red.</li>
+            <li>Comprobar si existe una interrupción del servicio.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Reconectar a la red.</li>
+            <li>Comprobar la contraseña.</li>
+            <li>Reiniciar el router mediante su procedimiento normal.</li>
+            <li>Acercar el equipo al punto de acceso.</li>
+            <li>Contactar con el proveedor si el servicio está interrumpido.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Ubicar correctamente el router.</li>
+            <li>Proteger la red con una contraseña segura.</li>
+            <li>Mantener actualizados los dispositivos.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 9. RENDIMIENTO ================= -->
+<section class="section" id="rendimiento" aria-labelledby="perf-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="perf-title">Problemas de rendimiento</h2>
+      <p class="section__text">Se presentan cuando la computadora trabaja más lentamente de lo esperado, tarda en responder o tiene dificultades para ejecutar determinadas tareas.</p>
+    </div>
+
+    <!-- Problema 2 -->
+    <article class="pb-ficha" id="problema-lenta">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-gauge"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 2</span>
+          <h3>La computadora funciona lentamente</h3>
+          <p>El sistema tarda demasiado en iniciar, abrir programas o realizar tareas habituales.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Rendimiento</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Los programas tardan en responder.</li>
+            <li>El inicio del sistema es lento.</li>
+            <li>Las ventanas se bloquean temporalmente.</li>
+            <li>Existen retrasos al realizar varias tareas.</li>
+            <li>El navegador tarda en cargar páginas.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Demasiados programas abiertos.</li>
+            <li>Poco espacio disponible.</li>
+            <li>Memoria RAM insuficiente para las tareas.</li>
+            <li>Aplicaciones innecesarias al inicio.</li>
+            <li>Sistema operativo desactualizado.</li>
+            <li>Software no deseado.</li>
+            <li>Problemas en la unidad de almacenamiento.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Observar los programas abiertos.</li>
+            <li>Consultar el espacio disponible.</li>
+            <li>Revisar el Administrador de tareas.</li>
+            <li>Identificar aplicaciones que consumen recursos.</li>
+            <li>Comprobar actualizaciones pendientes.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Cerrar aplicaciones innecesarias.</li>
+            <li>Liberar espacio mediante herramientas del sistema.</li>
+            <li>Desinstalar programas que no se utilicen.</li>
+            <li>Revisar los programas de inicio.</li>
+            <li>Actualizar el sistema operativo.</li>
+            <li>Realizar un análisis de seguridad.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Mantener organizado el almacenamiento.</li>
+            <li>Evitar programas desconocidos.</li>
+            <li>No ejecutar demasiadas aplicaciones simultáneamente.</li>
+            <li>Mantener el sistema actualizado.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- Problema 10 -->
+    <article class="pb-ficha" id="problema-almacenamiento-lleno">
+      <header class="pb-ficha__head">
+        <span class="icon-box icon-box--lg"><svg class="ico" aria-hidden="true"><use href="#i-drive"/></svg></span>
+        <div class="pb-ficha__title">
+          <span class="pb-num">Problema 10</span>
+          <h3>El almacenamiento está lleno</h3>
+          <p>La unidad de almacenamiento tiene poco espacio disponible y el sistema puede presentar dificultades para guardar archivos o instalar programas.</p>
+        </div>
+        <div class="pb-ficha__tags"><span class="pb-chip">Rendimiento</span><span class="pb-level">Dificultad básica</span></div>
+      </header>
+      <div class="pb-ficha__body">
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg>Síntomas</h4>
+          <ul>
+            <li>Advertencias de poco espacio.</li>
+            <li>Imposibilidad de descargar archivos.</li>
+            <li>Errores al instalar programas.</li>
+            <li>Dificultades al guardar documentos.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>Posibles causas</h4>
+          <ul>
+            <li>Acumulación de archivos.</li>
+            <li>Aplicaciones innecesarias.</li>
+            <li>Archivos temporales.</li>
+            <li>Copias duplicadas.</li>
+            <li>Archivos multimedia de gran tamaño.</li>
+          </ul>
+        </section>
+        <section class="pb-block">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Comprobaciones</h4>
+          <ul>
+            <li>Consultar el espacio disponible.</li>
+            <li>Revisar las carpetas principales.</li>
+            <li>Identificar archivos grandes.</li>
+            <li>Revisar las aplicaciones instaladas.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide pb-block--sol">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Soluciones</h4>
+          <ul>
+            <li>Eliminar archivos innecesarios después de comprobarlos.</li>
+            <li>Vaciar la papelera cuando corresponda.</li>
+            <li>Desinstalar aplicaciones que no se utilizan.</li>
+            <li>Trasladar archivos personales a un almacenamiento seguro.</li>
+            <li>Utilizar herramientas de limpieza del sistema.</li>
+          </ul>
+        </section>
+        <section class="pb-block pb-block--wide">
+          <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Prevención</h4>
+          <ul>
+            <li>Organizar documentos.</li>
+            <li>Evitar duplicar archivos.</li>
+            <li>Revisar periódicamente el espacio disponible.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 10. DIAGNÓSTICO BÁSICO ================= -->
+<section class="section section--soft" id="diagnostico" aria-labelledby="diag-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="diag-title">Aprende a identificar el origen de una falla</h2>
+      <p class="section__text">Antes de aplicar una solución, es importante observar cuidadosamente el comportamiento de la computadora. Un diagnóstico básico permite recopilar información y evitar acciones innecesarias.</p>
+    </div>
+    <ol class="pb-steps" style="list-style:none;margin:0;padding:0">
+      <li class="pb-step">
+        <div class="pb-step__marker"><svg class="ico" aria-hidden="true"><use href="#i-eye"/></svg><span class="pb-step__n">1</span></div>
+        <div class="pb-step__card">
+          <span class="pb-step__label">Paso 1</span>
+          <h3>Observar</h3>
+          <p>Identifica qué está ocurriendo. Comprueba qué funciones no trabajan correctamente y qué comportamiento presenta el equipo.</p>
+        </div>
+      </li>
+      <li class="pb-step">
+        <div class="pb-step__marker"><svg class="ico" aria-hidden="true"><use href="#i-list"/></svg><span class="pb-step__n">2</span></div>
+        <div class="pb-step__card">
+          <span class="pb-step__label">Paso 2</span>
+          <h3>Identificar los síntomas</h3>
+          <p>Reconoce las señales del problema, como mensajes de error, ruidos anormales, lentitud o desconexiones.</p>
+        </div>
+      </li>
+      <li class="pb-step">
+        <div class="pb-step__marker"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><span class="pb-step__n">3</span></div>
+        <div class="pb-step__card">
+          <span class="pb-step__label">Paso 3</span>
+          <h3>Buscar posibles causas</h3>
+          <p>Analiza qué situaciones podrían explicar el comportamiento observado. Recuerda que un mismo síntoma puede tener diferentes causas.</p>
+        </div>
+      </li>
+      <li class="pb-step">
+        <div class="pb-step__marker"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span class="pb-step__n">4</span></div>
+        <div class="pb-step__card">
+          <span class="pb-step__label">Paso 4</span>
+          <h3>Consultar una solución segura</h3>
+          <p>Busca procedimientos adecuados para el problema identificado. Evita realizar cambios que puedan comprometer el equipo o la información.</p>
+        </div>
+      </li>
+      <li class="pb-step">
+        <div class="pb-step__marker"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span class="pb-step__n">5</span></div>
+        <div class="pb-step__card">
+          <span class="pb-step__label">Paso 5</span>
+          <h3>Comprobar los resultados</h3>
+          <p>Después de aplicar una solución básica, verifica si el funcionamiento ha mejorado. Si el problema continúa, solicita asistencia técnica.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 11. PREVENCIÓN ================= -->
+<section class="section" id="prevencion" aria-labelledby="prev-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="prev-title">Evita problemas antes de que aparezcan</h2>
+      <p class="section__text">Un buen cuidado de la computadora ayuda a reducir fallas, conservar sus componentes y mantener un funcionamiento adecuado.</p>
+    </div>
+    <div class="grid grid--4 pb-prev">
+      <article class="card tone-1">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
+        <h3>Mantén limpio tu equipo</h3>
+        <p>Evita la acumulación de polvo y suciedad. Limpia las superficies externas con materiales adecuados y siguiendo las recomendaciones del fabricante.</p>
+      </article>
+      <article class="card tone-2">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-wind"/></svg></span>
+        <h3>Cuida la ventilación</h3>
+        <p>No obstruyas las entradas y salidas de aire. Coloca la computadora en una superficie firme y ventilada.</p>
+      </article>
+      <article class="card tone-3">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-refresh"/></svg></span>
+        <h3>Actualiza el sistema</h3>
+        <p>Mantén actualizado el sistema operativo y utiliza versiones confiables de tus programas.</p>
+      </article>
+      <article class="card tone-4">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg></span>
+        <h3>Protege tus archivos</h3>
+        <p>Realiza copias de seguridad periódicas de documentos importantes para reducir el riesgo de pérdida de información.</p>
+      </article>
+      <article class="card tone-4">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg></span>
+        <h3>Instala programas confiables</h3>
+        <p>Descarga aplicaciones desde sitios oficiales y evita archivos de procedencia desconocida.</p>
+      </article>
+      <article class="card tone-3">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-folder"/></svg></span>
+        <h3>Organiza el almacenamiento</h3>
+        <p>Elimina archivos innecesarios después de comprobarlos y conserva suficiente espacio disponible.</p>
+      </article>
+      <article class="card tone-2">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-plug"/></svg></span>
+        <h3>Cuida los cables y periféricos</h3>
+        <p>Conecta y desconecta los dispositivos correctamente. Evita doblar cables o tirar de ellos.</p>
+      </article>
+      <article class="card tone-1">
+        <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-tool"/></svg></span>
+        <h3>Realiza mantenimiento preventivo</h3>
+        <p>Revisa periódicamente el estado general del equipo y solicita mantenimiento profesional cuando sea necesario.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12. SEGURIDAD ================= -->
+<section class="section section--soft" id="seguridad" aria-labelledby="seg-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title" id="seg-title">La seguridad siempre es lo primero</h2>
+      <p class="section__text">No todas las fallas pueden solucionarse de manera segura por cuenta propia. Algunas intervenciones requieren conocimientos técnicos, herramientas especializadas y medidas de protección.</p>
+    </div>
+    <div class="pb-safety">
+      <article class="pb-warn-card" role="note">
+        <h3><svg class="ico" aria-hidden="true"><use href="#i-alert"/></svg>Evita realizar estas acciones sin capacitación</h3>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Abrir fuentes de alimentación.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Manipular circuitos eléctricos.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Trabajar con componentes conectados a la corriente.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Intentar reparar placas electrónicas.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Manipular baterías dañadas.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Desmontar componentes sin conocer los procedimientos adecuados.</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ban"/></svg>Realizar reparaciones que puedan provocar pérdida de información.</li>
+        </ul>
+      </article>
+      <article class="pb-help-card">
+        <span class="icon-box icon-box--lg icon-box--glass"><svg class="ico" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+        <h3>¿Cuándo debes solicitar ayuda técnica?</h3>
+        <p>Cuando el equipo presenta fallas eléctricas, humo, olor a quemado, daños físicos, problemas internos o errores que no pueden solucionarse mediante comprobaciones básicas.</p>
+      </article>
+      <div class="pb-quote">
+        <svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>
+        <p>Identificar un problema es importante, pero solucionarlo de manera segura es todavía más importante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 13. SECCIÓN FINAL ================= -->
+<section class="cta" id="aprendizaje" aria-labelledby="cta-title">
+  <div class="container cta__inner">
+    <h2 id="cta-title">Ahora puedes reconocer mejor los problemas de tu computadora</h2>
+    <p>Comprender los síntomas, identificar posibles causas y conocer las medidas preventivas son conocimientos fundamentales para cuidar cualquier equipo informático.</p>
+    <p class="pb-cta__sub">Continúa aprendiendo y descubre más herramientas, técnicas de mantenimiento y conocimientos sobre informática.</p>
+    <a class="btn btn--light btn--lg" href="aprende.html">Continuar aprendiendo <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 14. PIE DE PÁGINA ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a class="brand brand--light" href="../index.html" aria-label="TECNO GUÍA, inicio">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <rect width="34" height="34" rx="10" fill="#1565D8"/>
+          <rect x="8" y="9" width="18" height="12" rx="2" fill="none" stroke="#fff" stroke-width="2"/>
+          <path d="M13 25h8M17 21v4" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__name">TECNO <b>GUÍA</b></span>
+      </a>
+      <p>TECNO GUÍA — Aprende informática, comprende tu computadora y descubre cómo mantenerla en buen estado.</p>
+    </div>
+    <div>
+      <h4>Secciones</h4>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="aprende.html">Aprende</a></li>
+        <li><a href="mantenimiento.html">Mantenimiento</a></li>
+        <li><a href="#top">Problemas y soluciones</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Más</h4>
+      <ul>
+        <li><a href="herramientas.html">Herramientas</a></li>
+        <li><a href="evaluacion.html">Evaluación</a></li>
+        <li><a href="acerca-de.html">Acerca de</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Sobre el proyecto</h4>
+      <p>Plataforma educativa dirigida a estudiantes principiantes que desean aprender informática, hardware, software, mantenimiento y diagnóstico básico de computadoras.</p>
+    </div>
+  </div>
+  <div class="container footer__bottom">© 2026 TECNO GUÍA. Todos los derechos reservados.</div>
+</footer>
+
+<script src="../js/menu.js"></script>
+</body>
+</html>

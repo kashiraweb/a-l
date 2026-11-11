@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acerca de | TECNO GUÍA</title>
+  <meta name="description" content="Conoce TECNO GUÍA, una plataforma educativa dedicada al aprendizaje de informática, hardware, software y mantenimiento de computadoras.">
+  <link rel="stylesheet" href="../css/acerca-de.css">
+  <script src="../js/acerca-de/acerca-de.js" defer></script>
+</head>
+<body class="about-page" id="top">
+
+  <a class="about-skip" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Sprite de iconos (solo visual, sin archivos externos) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5V5.5A2.5 2.5 0 0 1 6.5 3H20v14H6.5A2.5 2.5 0 0 0 4 19.5z"/><path d="M6.5 17H20v4H6.5A2.5 2.5 0 0 1 4 19.5"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V18h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 14l2 2 4-4"/></symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3 6.3-2.1z"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+      <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+      <symbol id="i-stairs" viewBox="0 0 24 24"><path d="M3 20h5v-5h5v-5h5V5h3"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4M4 4h13l-2 4 2 4H4"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="about-header">
+    <div class="about-container about-header__inner">
+      <a class="about-logo" href="../index.html" data-route="inicio" aria-label="TECNO GUÍA, ir al inicio">
+        <img class="about-logo__img" src="../assets/icons/logo.svg" alt="" width="40" height="40">
+        <span class="about-logo__text">TECNO <strong>GUÍA</strong></span>
+      </a>
+
+      <nav class="about-nav" aria-label="Navegación principal">
+        <ul class="about-nav__list">
+          <li><a class="about-nav__link" href="../index.html" data-route="inicio">Inicio</a></li>
+          <li><a class="about-nav__link" href="aprende.html" data-route="aprende">Aprende</a></li>
+          <li><a class="about-nav__link" href="mantenimiento.html" data-route="mantenimiento">Mantenimiento</a></li>
+          <li><a class="about-nav__link" href="problemas.html" data-route="problemas-y-soluciones">Problemas y soluciones</a></li>
+          <li><a class="about-nav__link" href="herramientas.html" data-route="herramientas">Herramientas</a></li>
+          <li><a class="about-nav__link" href="evaluacion.html" data-route="evaluacion">Evaluación</a></li>
+          <li><a class="about-nav__link is-active" href="#top" data-route="acerca-de" aria-current="page">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="about-hero" aria-labelledby="hero-title">
+      <div class="about-container about-hero__grid">
+        <div class="about-hero__content">
+          <p class="about-eyebrow"><svg class="about-icon" aria-hidden="true"><use href="#i-grad"/></svg> Plataforma educativa</p>
+          <h1 id="hero-title" class="about-hero__title">Conoce <span>TECNO GUÍA</span></h1>
+          <p class="about-hero__lead">Una plataforma educativa para descubrir, comprender y aprender el mundo de la informática y el mantenimiento de computadoras.</p>
+          <p class="about-hero__text">TECNO GUÍA reúne contenidos educativos diseñados para ayudar a los estudiantes a comprender cómo funcionan las computadoras, conocer sus componentes, identificar herramientas informáticas y aprender los fundamentos del mantenimiento preventivo y correctivo.</p>
+          <ul class="about-hero__chips" aria-label="Áreas principales">
+            <li><svg class="about-icon" aria-hidden="true"><use href="#i-cpu"/></svg> Hardware</li>
+            <li><svg class="about-icon" aria-hidden="true"><use href="#i-window"/></svg> Software</li>
+            <li><svg class="about-icon" aria-hidden="true"><use href="#i-wrench"/></svg> Mantenimiento</li>
+          </ul>
+        </div>
+
+        <div class="about-hero__visual" aria-hidden="true">
+          <svg class="about-hero__circuit" viewBox="0 0 400 360" fill="none">
+            <path d="M0 60h90l30 30h70M400 300h-110l-30-30h-60M0 300h70l30-30M400 60h-70l-30 30M200 0v40M200 360v-30"/>
+            <circle cx="90" cy="60" r="4"/><circle cx="190" cy="90" r="4"/><circle cx="290" cy="300" r="4"/><circle cx="200" cy="40" r="4"/><circle cx="330" cy="60" r="4"/><circle cx="70" cy="300" r="4"/>
+          </svg>
+
+          <div class="about-monitor">
+            <div class="about-monitor__screen">
+              <div class="about-monitor__bar"><i></i><i></i><i></i></div>
+              <div class="about-monitor__body">
+                <div class="about-monitor__code">
+                  <span style="--w:62%" class="c1"></span>
+                  <span style="--w:38%" class="c2 ind"></span>
+                  <span style="--w:74%" class="c3 ind"></span>
+                  <span style="--w:48%" class="c2 ind"></span>
+                  <span style="--w:30%" class="c1"></span>
+                  <span style="--w:56%" class="c3"></span>
+                  <span style="--w:42%" class="c2 ind"></span>
+                </div>
+                <div class="about-monitor__chip"><svg class="about-icon"><use href="#i-cpu"/></svg></div>
+              </div>
+            </div>
+            <div class="about-monitor__neck"></div>
+            <div class="about-monitor__base"></div>
+          </div>
+
+          <div class="about-float about-float--a"><span class="about-iconbox"><svg class="about-icon"><use href="#i-cpu"/></svg></span> Hardware</div>
+          <div class="about-float about-float--b"><span class="about-iconbox"><svg class="about-icon"><use href="#i-code"/></svg></span> Software</div>
+          <div class="about-float about-float--c"><span class="about-iconbox"><svg class="about-icon"><use href="#i-wrench"/></svg></span> Mantenimiento</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ¿QUÉ ES? ===================== -->
+    <section id="que-es" class="about-section about-introduction" aria-labelledby="intro-title">
+      <div class="about-container about-introduction__grid">
+        <div class="about-introduction__text">
+          <p class="about-kicker">Presentación</p>
+          <h2 id="intro-title" class="about-title">¿Qué es TECNO GUÍA?</h2>
+          <p class="about-text about-text--lead">TECNO GUÍA es una plataforma web educativa orientada al aprendizaje de informática, computación y mantenimiento de computadoras. Su propósito es ofrecer información organizada y comprensible para que los estudiantes puedan conocer los fundamentos tecnológicos, identificar los componentes de un equipo informático y comprender las actividades básicas relacionadas con su cuidado y mantenimiento.</p>
+          <p class="about-text">La plataforma organiza sus contenidos en diferentes áreas de aprendizaje, permitiendo que los usuarios exploren conceptos fundamentales, conozcan las herramientas utilizadas en informática, estudien los componentes de una computadora y comprendan cómo reconocer diferentes problemas tecnológicos.</p>
+          <p class="about-text">TECNO GUÍA busca facilitar el acceso al conocimiento mediante explicaciones claras, recursos visuales y una organización progresiva de los contenidos, procurando que los temas técnicos sean más fáciles de comprender para quienes están comenzando su formación informática.</p>
+        </div>
+
+        <aside class="about-introduction__card" aria-label="TECNO GUÍA en resumen">
+          <div class="about-introduction__badge"><svg class="about-icon"><use href="#i-grad"/></svg></div>
+          <h3>TECNO GUÍA</h3>
+          <p>Plataforma web educativa</p>
+          <ul class="about-introduction__list">
+            <li><span class="about-iconbox"><svg class="about-icon"><use href="#i-monitor"/></svg></span> Informática y computación</li>
+            <li><span class="about-iconbox"><svg class="about-icon"><use href="#i-cpu"/></svg></span> Componentes de un equipo</li>
+            <li><span class="about-iconbox"><svg class="about-icon"><use href="#i-wrench"/></svg></span> Cuidado y mantenimiento</li>
+            <li><span class="about-iconbox"><svg class="about-icon"><use href="#i-layers"/></svg></span> Contenidos por áreas</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== PROPÓSITO ===================== -->
+    <section id="proposito" class="about-section about-purpose" aria-labelledby="purpose-title">
+      <div class="about-container about-purpose__grid">
+        <div class="about-purpose__icon" aria-hidden="true">
+          <span class="about-purpose__ring"></span>
+          <span class="about-purpose__core"><svg class="about-icon"><use href="#i-bulb"/></svg></span>
+        </div>
+        <div class="about-purpose__content">
+          <p class="about-kicker">Propósito</p>
+          <h2 id="purpose-title" class="about-title">Nuestro propósito</h2>
+          <p class="about-text">El propósito de TECNO GUÍA es facilitar el aprendizaje de conocimientos informáticos mediante una plataforma educativa que organice información sobre computadoras, hardware, software, herramientas tecnológicas y mantenimiento informático.</p>
+          <p class="about-text">La plataforma pretende ayudar a los estudiantes a desarrollar una comprensión básica de los equipos informáticos, reconocer sus principales componentes y adquirir conocimientos que les permitan interpretar mejor su funcionamiento y comprender la importancia de su cuidado.</p>
+          <blockquote class="about-quote">Comprender la tecnología es el primer paso para aprender a utilizarla y cuidarla.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISIÓN Y VISIÓN ===================== -->
+    <section class="about-section about-mission-vision" aria-label="Misión y visión">
+      <div class="about-container about-mv__grid">
+        <article id="mision" class="about-card about-mission" aria-labelledby="mission-title">
+          <div class="about-card__top">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-target"/></svg></span>
+            <h2 id="mission-title" class="about-card__title">Nuestra misión</h2>
+          </div>
+          <p class="about-text">Ofrecer una plataforma educativa accesible y organizada que facilite el aprendizaje de informática y mantenimiento de computadoras mediante contenidos claros, explicaciones progresivas y recursos visuales. TECNO GUÍA busca contribuir a que los estudiantes comprendan los fundamentos de la computación, identifiquen los componentes de hardware y software y conozcan los principios básicos para el cuidado y mantenimiento de los equipos informáticos.</p>
+        </article>
+
+        <article id="vision" class="about-card about-vision" aria-labelledby="vision-title">
+          <div class="about-card__top">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-eye"/></svg></span>
+            <h2 id="vision-title" class="about-card__title">Nuestra visión</h2>
+          </div>
+          <p class="about-text">Consolidarse como una plataforma educativa de referencia para el aprendizaje inicial de informática y mantenimiento de computadoras, ofreciendo contenidos cada vez más organizados, comprensibles y útiles para estudiantes que desean fortalecer sus conocimientos tecnológicos.</p>
+          <p class="about-text">TECNO GUÍA aspira a contribuir a una formación informática en la que los estudiantes no solamente conozcan los nombres de los componentes y herramientas, sino que también comprendan su función, su importancia y su relación con el funcionamiento general de una computadora.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== OBJETIVOS ===================== -->
+    <section id="objetivos" class="about-section about-objectives" aria-labelledby="objectives-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Objetivos</p>
+          <h2 id="objectives-title" class="about-title">¿Qué buscamos lograr?</h2>
+          <p class="about-section__desc">TECNO GUÍA organiza sus contenidos con el propósito de facilitar la comprensión de los principales conocimientos relacionados con la informática y el mantenimiento de computadoras.</p>
+        </header>
+
+        <article class="about-general-goal">
+          <span class="about-iconbox about-iconbox--lg about-iconbox--light"><svg class="about-icon"><use href="#i-flag"/></svg></span>
+          <div>
+            <h3>Objetivo general</h3>
+            <p>Facilitar el aprendizaje de informática y mantenimiento de computadoras mediante una plataforma web educativa que presente contenidos organizados, explicaciones comprensibles y recursos visuales dirigidos a estudiantes principiantes.</p>
+          </div>
+        </article>
+
+        <div class="about-grid about-grid--3">
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">01</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-book"/></svg></span></div>
+            <p class="about-card__label">Objetivo 1</p>
+            <h3 class="about-card__title">Enseñar fundamentos informáticos</h3>
+            <p class="about-card__text">Presentar conocimientos básicos sobre informática y computación para que los estudiantes comprendan los conceptos esenciales relacionados con el uso de las computadoras.</p>
+          </article>
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">02</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-cpu"/></svg></span></div>
+            <p class="about-card__label">Objetivo 2</p>
+            <h3 class="about-card__title">Identificar componentes</h3>
+            <p class="about-card__text">Explicar las características y funciones de los principales componentes de hardware y los elementos de software que intervienen en el funcionamiento de un equipo informático.</p>
+          </article>
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">03</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-shield"/></svg></span></div>
+            <p class="about-card__label">Objetivo 3</p>
+            <h3 class="about-card__title">Comprender el mantenimiento</h3>
+            <p class="about-card__text">Dar a conocer los principios del mantenimiento preventivo y correctivo, destacando su importancia para el cuidado y conservación de los equipos.</p>
+          </article>
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">04</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-sliders"/></svg></span></div>
+            <p class="about-card__label">Objetivo 4</p>
+            <h3 class="about-card__title">Reconocer herramientas</h3>
+            <p class="about-card__text">Presentar herramientas físicas y digitales utilizadas en el diagnóstico, mantenimiento y administración de equipos informáticos.</p>
+          </article>
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">05</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-alert"/></svg></span></div>
+            <p class="about-card__label">Objetivo 5</p>
+            <h3 class="about-card__title">Identificar problemas</h3>
+            <p class="about-card__text">Facilitar la comprensión de problemas informáticos comunes, sus posibles causas y las alternativas generales para su identificación y solución.</p>
+          </article>
+          <article class="about-card about-objective">
+            <div class="about-card__head"><span class="about-num">06</span><span class="about-iconbox"><svg class="about-icon"><use href="#i-clipboard"/></svg></span></div>
+            <p class="about-card__label">Objetivo 6</p>
+            <h3 class="about-card__title">Fortalecer el aprendizaje</h3>
+            <p class="about-card__text">Proporcionar recursos educativos y evaluaciones que permitan reforzar los conocimientos adquiridos durante el recorrido por la plataforma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VALORES ===================== -->
+    <section id="valores" class="about-section about-values" aria-labelledby="values-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Valores</p>
+          <h2 id="values-title" class="about-title">Principios que orientan TECNO GUÍA</h2>
+          <p class="about-section__desc">El contenido y la organización de la plataforma se orientan por principios que buscan hacer del aprendizaje una experiencia comprensible, organizada y útil.</p>
+        </header>
+
+        <div class="about-grid about-grid--3">
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-users"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">1</span> Accesibilidad</h3>
+            <p class="about-card__text">Presentar información de manera clara y comprensible, procurando que los estudiantes puedan acercarse al conocimiento informático sin necesitar experiencia previa.</p>
+          </article>
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-stairs"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">2</span> Aprendizaje progresivo</h3>
+            <p class="about-card__text">Organizar los contenidos desde conceptos fundamentales hacia temas más específicos, permitiendo construir conocimientos paso a paso.</p>
+          </article>
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-eye"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">3</span> Claridad</h3>
+            <p class="about-card__text">Explicar los conceptos técnicos mediante definiciones, ejemplos y descripciones que faciliten su comprensión.</p>
+          </article>
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-layers"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">4</span> Organización</h3>
+            <p class="about-card__text">Distribuir los contenidos en áreas temáticas para facilitar la navegación y la localización de la información.</p>
+          </article>
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-shield"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">5</span> Responsabilidad tecnológica</h3>
+            <p class="about-card__text">Promover el conocimiento y cuidado adecuado de los equipos informáticos, destacando la importancia de la seguridad y las buenas prácticas.</p>
+          </article>
+          <article class="about-card about-value">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-wrench"/></svg></span>
+            <h3 class="about-card__title"><span class="about-num-inline">6</span> Formación práctica</h3>
+            <p class="about-card__text">Relacionar los conocimientos teóricos con situaciones y ejemplos que ayuden a comprender su aplicación en el entorno informático.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ÁREAS EDUCATIVAS ===================== -->
+    <section id="areas" class="about-section about-areas" aria-labelledby="areas-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Contenidos</p>
+          <h2 id="areas-title" class="about-title">¿Qué puedes aprender en TECNO GUÍA?</h2>
+          <p class="about-section__desc">La plataforma está organizada en diferentes áreas que permiten explorar los principales conocimientos relacionados con la informática y el mantenimiento de computadoras.</p>
+        </header>
+
+        <div class="about-grid about-grid--4">
+          <article id="area-fundamentos" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-monitor"/></svg></span><span class="about-tag">Área 1</span></div>
+            <h3 class="about-card__title">Fundamentos de informática</h3>
+            <p class="about-card__text">Aprende qué es la informática, cómo funciona una computadora y cuáles son los conceptos fundamentales que permiten comprender el mundo de la computación.</p>
+          </article>
+          <article id="area-hardware" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-cpu"/></svg></span><span class="about-tag">Área 2</span></div>
+            <h3 class="about-card__title">Hardware y componentes</h3>
+            <p class="about-card__text">Conoce los componentes físicos de una computadora, sus características, sus funciones y la manera en que trabajan conjuntamente para permitir el funcionamiento del equipo.</p>
+          </article>
+          <article id="area-software" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-window"/></svg></span><span class="about-tag">Área 3</span></div>
+            <h3 class="about-card__title">Software y sistemas operativos</h3>
+            <p class="about-card__text">Comprende qué es el software, cuáles son sus principales tipos y qué función cumplen los sistemas operativos en la administración de los recursos de una computadora.</p>
+          </article>
+          <article id="area-mantenimiento-preventivo" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-shield"/></svg></span><span class="about-tag">Área 4</span></div>
+            <h3 class="about-card__title">Mantenimiento preventivo</h3>
+            <p class="about-card__text">Conoce las prácticas generales destinadas a conservar los equipos informáticos en buenas condiciones, reducir el deterioro y favorecer su funcionamiento adecuado.</p>
+          </article>
+          <article id="area-mantenimiento-correctivo" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-wrench"/></svg></span><span class="about-tag">Área 5</span></div>
+            <h3 class="about-card__title">Mantenimiento correctivo</h3>
+            <p class="about-card__text">Aprende los fundamentos de la identificación de fallas, el diagnóstico inicial y la comprensión de posibles soluciones para problemas informáticos.</p>
+          </article>
+          <article id="area-problemas-soluciones" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-alert"/></svg></span><span class="about-tag">Área 6</span></div>
+            <h3 class="about-card__title">Problemas y soluciones</h3>
+            <p class="about-card__text">Explora problemas frecuentes relacionados con computadoras, sus posibles causas y las medidas generales que pueden ayudar a comprenderlos.</p>
+          </article>
+          <article id="area-herramientas" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-sliders"/></svg></span><span class="about-tag">Área 7</span></div>
+            <h3 class="about-card__title">Herramientas informáticas</h3>
+            <p class="about-card__text">Identifica herramientas físicas y programas digitales utilizados en el mantenimiento, diagnóstico y administración de equipos.</p>
+          </article>
+          <article id="area-evaluacion" class="about-card about-area">
+            <div class="about-card__head"><span class="about-iconbox"><svg class="about-icon"><use href="#i-clipboard"/></svg></span><span class="about-tag">Área 8</span></div>
+            <h3 class="about-card__title">Evaluación de conocimientos</h3>
+            <p class="about-card__text">Refuerza lo aprendido mediante evaluaciones organizadas por categorías y niveles de dificultad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METODOLOGÍA ===================== -->
+    <section id="metodologia" class="about-section about-methodology" aria-labelledby="method-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Metodología</p>
+          <h2 id="method-title" class="about-title">Una forma organizada de aprender</h2>
+          <p class="about-section__desc">TECNO GUÍA organiza sus contenidos mediante una metodología progresiva que busca facilitar la comprensión de los temas informáticos. Los contenidos se presentan de manera estructurada para que los estudiantes puedan avanzar desde conocimientos básicos hacia conceptos más específicos.</p>
+        </header>
+
+        <ol class="about-steps">
+          <li class="about-step">
+            <div class="about-step__marker"><span class="about-step__num">1</span></div>
+            <div class="about-step__card">
+              <span class="about-iconbox"><svg class="about-icon"><use href="#i-book"/></svg></span>
+              <p class="about-card__label">Etapa 1</p>
+              <h3 class="about-card__title">Conocer</h3>
+              <p class="about-card__text">El estudiante comienza familiarizándose con los conceptos fundamentales de informática, computación, hardware y software.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <div class="about-step__marker"><span class="about-step__num">2</span></div>
+            <div class="about-step__card">
+              <span class="about-iconbox"><svg class="about-icon"><use href="#i-bulb"/></svg></span>
+              <p class="about-card__label">Etapa 2</p>
+              <h3 class="about-card__title">Comprender</h3>
+              <p class="about-card__text">Se presentan explicaciones sobre las características, funciones y relaciones entre los componentes de una computadora y los diferentes elementos que intervienen en su funcionamiento.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <div class="about-step__marker"><span class="about-step__num">3</span></div>
+            <div class="about-step__card">
+              <span class="about-iconbox"><svg class="about-icon"><use href="#i-wrench"/></svg></span>
+              <p class="about-card__label">Etapa 3</p>
+              <h3 class="about-card__title">Aplicar conocimientos</h3>
+              <p class="about-card__text">Los contenidos se relacionan con ejemplos, herramientas y situaciones informáticas que ayudan a comprender cómo se utilizan los conocimientos estudiados.</p>
+            </div>
+          </li>
+          <li class="about-step">
+            <div class="about-step__marker"><span class="about-step__num">4</span></div>
+            <div class="about-step__card">
+              <span class="about-iconbox"><svg class="about-icon"><use href="#i-clipboard"/></svg></span>
+              <p class="about-card__label">Etapa 4</p>
+              <h3 class="about-card__title">Evaluar</h3>
+              <p class="about-card__text">El estudiante puede reforzar los temas mediante evaluaciones que permiten revisar los conocimientos adquiridos e identificar aquellos contenidos que necesitan mayor atención.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== A QUIÉN VA DIRIGIDA ===================== -->
+    <section id="publico" class="about-section about-audience" aria-labelledby="audience-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Público</p>
+          <h2 id="audience-title" class="about-title">Aprender informática desde cero</h2>
+          <p class="about-section__desc">TECNO GUÍA está dirigida principalmente a estudiantes y personas que desean adquirir conocimientos básicos sobre informática, computadoras y mantenimiento de equipos tecnológicos.</p>
+          <p class="about-section__desc">Su organización busca facilitar el acercamiento a estos temas, especialmente para quienes todavía no tienen experiencia en el área o necesitan fortalecer sus conocimientos fundamentales.</p>
+        </header>
+
+        <div class="about-grid about-grid--4">
+          <article class="about-card about-profile">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-compass"/></svg></span>
+            <h3 class="about-card__title">Estudiantes principiantes</h3>
+            <p class="about-card__text">Personas que están comenzando a estudiar informática y necesitan comprender los conceptos fundamentales.</p>
+          </article>
+          <article class="about-card about-profile">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-cpu"/></svg></span>
+            <h3 class="about-card__title">Estudiantes de formación técnica</h3>
+            <p class="about-card__text">Estudiantes que desean complementar sus conocimientos relacionados con hardware, software y mantenimiento de computadoras.</p>
+          </article>
+          <article class="about-card about-profile">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-globe"/></svg></span>
+            <h3 class="about-card__title">Personas interesadas en la tecnología</h3>
+            <p class="about-card__text">Usuarios que sienten curiosidad por conocer cómo funcionan las computadoras y cuáles son sus principales componentes.</p>
+          </article>
+          <article class="about-card about-profile">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-refresh"/></svg></span>
+            <h3 class="about-card__title">Personas que desean reforzar conocimientos</h3>
+            <p class="about-card__text">Estudiantes que necesitan repasar conceptos, identificar herramientas y fortalecer su comprensión de los temas informáticos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BENEFICIOS ===================== -->
+    <section id="beneficios" class="about-section about-benefits" aria-labelledby="benefits-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Beneficios</p>
+          <h2 id="benefits-title" class="about-title">¿Qué aporta TECNO GUÍA al aprendizaje?</h2>
+          <p class="about-section__desc">La plataforma reúne diferentes recursos y áreas de conocimiento que permiten explorar la informática de una manera organizada.</p>
+        </header>
+
+        <div class="about-grid about-grid--3">
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-layers"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Contenidos organizados</h3>
+              <p class="about-card__text">Los temas se distribuyen en secciones específicas para facilitar su localización y comprensión.</p>
+            </div>
+          </article>
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-bulb"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Explicaciones comprensibles</h3>
+              <p class="about-card__text">Los conceptos técnicos se presentan mediante explicaciones diseñadas para estudiantes que están comenzando.</p>
+            </div>
+          </article>
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-stairs"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Aprendizaje progresivo</h3>
+              <p class="about-card__text">La organización de los contenidos permite avanzar desde conocimientos básicos hacia temas más específicos.</p>
+            </div>
+          </article>
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-sliders"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Conocimiento de herramientas</h3>
+              <p class="about-card__text">Los estudiantes pueden conocer herramientas físicas y digitales relacionadas con el mantenimiento informático.</p>
+            </div>
+          </article>
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-shield"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Comprensión del mantenimiento</h3>
+              <p class="about-card__text">La plataforma explica la importancia de cuidar los equipos y comprender las diferencias entre mantenimiento preventivo y correctivo.</p>
+            </div>
+          </article>
+          <article class="about-card about-benefit">
+            <span class="about-iconbox about-iconbox--lg"><svg class="about-icon"><use href="#i-clipboard"/></svg></span>
+            <div>
+              <h3 class="about-card__title">Refuerzo de conocimientos</h3>
+              <p class="about-card__text">Las evaluaciones permiten revisar los temas estudiados y reconocer qué contenidos necesitan reforzarse.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TECNOLOGÍAS ===================== -->
+    <section id="tecnologias" class="about-section about-technologies" aria-labelledby="tech-title">
+      <div class="about-container">
+        <header class="about-section__head">
+          <p class="about-kicker">Tecnologías</p>
+          <h2 id="tech-title" class="about-title">Tecnologías que hacen posible TECNO GUÍA</h2>
+          <p class="about-section__desc">TECNO GUÍA se desarrolla mediante tecnologías fundamentales del desarrollo web, que permiten construir su estructura, definir su apariencia visual e incorporar interacciones en sus diferentes páginas.</p>
+        </header>
+
+        <div class="about-grid about-grid--3">
+          <article class="about-card about-tech about-tech--html">
+            <div class="about-tech__head">
+              <span class="about-tech__symbol" aria-hidden="true">&lt;/&gt;</span>
+              <span class="about-tag">Estructura web</span>
+            </div>
+            <h3 class="about-card__title">HTML5</h3>
+            <p class="about-card__text">HTML5 es el lenguaje de marcado utilizado para estructurar el contenido de las páginas web. Permite organizar títulos, párrafos, imágenes, enlaces, secciones, tarjetas y otros elementos que forman parte de la estructura de una página.</p>
+          </article>
+          <article class="about-card about-tech about-tech--css">
+            <div class="about-tech__head">
+              <span class="about-tech__symbol" aria-hidden="true">{ }</span>
+              <span class="about-tag">Diseño y presentación</span>
+            </div>
+            <h3 class="about-card__title">CSS3</h3>
+            <p class="about-card__text">CSS3 es el lenguaje de estilos utilizado para definir la apariencia visual de la plataforma. Permite establecer colores, tipografías, tamaños, distribuciones, espaciados, bordes, sombras, animaciones y diseños adaptables a diferentes dispositivos.</p>
+          </article>
+          <article class="about-card about-tech about-tech--js">
+            <div class="about-tech__head">
+              <span class="about-tech__symbol" aria-hidden="true">JS</span>
+              <span class="about-tag">Interactividad</span>
+            </div>
+            <h3 class="about-card__title">JavaScript</h3>
+            <p class="about-card__text">JavaScript es el lenguaje de programación utilizado para incorporar comportamientos e interacciones a las páginas web. Permite gestionar eventos, actualizar elementos de la interfaz y desarrollar diferentes funcionalidades dentro de la plataforma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPROMISO ===================== -->
+    <section id="compromiso" class="about-commitment" aria-labelledby="commit-title">
+      <svg class="about-commitment__circuit" viewBox="0 0 600 400" fill="none" aria-hidden="true" preserveAspectRatio="xMaxYMid slice">
+        <path d="M600 60H430l-40 40H290M600 200H480l-30 30H340M600 340H420l-50-50H260M430 60V0M290 100V40M340 230v60"/>
+        <circle cx="430" cy="60" r="5"/><circle cx="290" cy="100" r="5"/><circle cx="480" cy="200" r="5"/><circle cx="340" cy="230" r="5"/><circle cx="420" cy="340" r="5"/><circle cx="260" cy="290" r="5"/>
+      </svg>
+      <div class="about-container about-commitment__inner">
+        <div class="about-commitment__content">
+          <p class="about-kicker about-kicker--light">Compromiso</p>
+          <h2 id="commit-title" class="about-title about-title--light">La tecnología se comprende aprendiendo</h2>
+          <p class="about-text about-text--light">El aprendizaje de informática no consiste únicamente en memorizar nombres de componentes o conocer diferentes programas. También implica comprender cómo funcionan los equipos, reconocer la relación entre sus elementos y desarrollar conocimientos que permitan utilizar la tecnología de manera responsable.</p>
+          <p class="about-text about-text--light">TECNO GUÍA busca contribuir a ese aprendizaje mediante contenidos organizados que permitan explorar los fundamentos de la informática y comprender la importancia del mantenimiento y cuidado de los equipos tecnológicos.</p>
+          <blockquote class="about-quote about-quote--light">Cada concepto comprendido representa un nuevo paso en el aprendizaje tecnológico.</blockquote>
+        </div>
+        <div class="about-commitment__art" aria-hidden="true">
+          <span class="about-commitment__chip"><svg class="about-icon"><use href="#i-cpu"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INVITACIÓN FINAL ===================== -->
+    <section id="invitacion" class="about-section about-cta" aria-labelledby="cta-title">
+      <div class="about-container">
+        <div class="about-cta__panel">
+          <h2 id="cta-title" class="about-title">Comienza a descubrir el mundo de la informática</h2>
+          <p class="about-section__desc">Explora los contenidos de TECNO GUÍA, conoce los componentes de una computadora, descubre las herramientas informáticas y aprende los fundamentos del mantenimiento de equipos.</p>
+          <div class="about-cta__actions">
+            <a class="about-btn about-btn--primary" href="#areas">Explorar contenidos</a>
+            <a class="about-btn about-btn--secondary" href="#area-mantenimiento-preventivo">Conocer mantenimiento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="about-footer">
+    <div class="about-container about-footer__grid">
+      <div class="about-footer__brand">
+        <a class="about-logo about-logo--light" href="../index.html" data-route="inicio" aria-label="TECNO GUÍA, ir al inicio">
+          <img class="about-logo__img" src="../assets/icons/logo.svg" alt="" width="40" height="40">
+        <span class="about-logo__text">TECNO <strong>GUÍA</strong></span>
+        </a>
+        <p>Plataforma educativa dedicada al aprendizaje de informática, computación y mantenimiento de computadoras.</p>
+      </div>
+
+      <nav class="about-footer__col" aria-label="Navegación del pie de página">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="../index.html" data-route="inicio">Inicio</a></li>
+          <li><a href="aprende.html" data-route="aprende">Aprende</a></li>
+          <li><a href="mantenimiento.html" data-route="mantenimiento">Mantenimiento</a></li>
+          <li><a href="problemas.html" data-route="problemas-y-soluciones">Problemas y soluciones</a></li>
+          <li><a href="herramientas.html" data-route="herramientas">Herramientas</a></li>
+          <li><a href="evaluacion.html" data-route="evaluacion">Evaluación</a></li>
+          <li><a href="#top" data-route="acerca-de" aria-current="page">Acerca de</a></li>
+        </ul>
+      </nav>
+
+      <div class="about-footer__col">
+        <h2>Áreas de aprendizaje</h2>
+        <ul>
+          <li><a href="#area-fundamentos">Fundamentos de informática</a></li>
+          <li><a href="#area-hardware">Hardware y software</a></li>
+          <li><a href="#area-mantenimiento-preventivo">Mantenimiento preventivo</a></li>
+          <li><a href="#area-mantenimiento-correctivo">Mantenimiento correctivo</a></li>
+          <li><a href="#area-herramientas">Herramientas informáticas</a></li>
+        </ul>
+      </div>
+
+      <div class="about-footer__col about-footer__info">
+        <h2>Información general</h2>
+        <p class="about-footer__phrase">Aprende, comprende y descubre el mundo de la tecnología.</p>
+      </div>
+    </div>
+
+    <div class="about-footer__bottom">
+      <div class="about-container">
+        <p>© TECNO GUÍA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="about-toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

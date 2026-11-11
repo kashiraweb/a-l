@@ -1,0 +1,16 @@
+{
+  "formato": "Plantilla de estructura. Sustituir por las preguntas reales exportadas de la página de evaluación.",
+  "evaluacion-ejemplo": {
+    "preguntas": [
+      {
+        "id": "ej-001",
+        "enunciado": "Pregunta de ejemplo",
+        "alternativas": ["Alternativa A", "Alternativa B", "Alternativa C", "Alternativa D"],
+        "correcta": 0,
+        "explicacion": "Explicación educativa de ejemplo.",
+        "categoria": "Categoría",
+        "tema": "Tema relacionado"
+      }
+    ]
+  }
+}
